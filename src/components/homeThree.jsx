@@ -34,7 +34,8 @@ const Content = styled.div`
     .word{
         display: flex;
         justify-content: center;
-    }        
+    }
+    
     @media (max-width: 800px) {
         display: grid;
         width: 100%;

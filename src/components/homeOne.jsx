@@ -36,6 +36,16 @@ const Home = styled.div`
     width: 90%;
     height: 100vh;
     margin: 0px auto;
+    transform: translateX(-100%);
+    animation: slide-in 2s forwards;
+    @keyframes slide-in {
+        from{
+            transform: translateX(-100%); /* Start from the left */  
+        }
+        to{
+            transform: translateX(0); /* End at the original position */  
+        }
+    }
     @media (max-width: 800px) {
         display: grid;
         width: 90%;

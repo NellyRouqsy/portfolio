@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const About = () => {
     return (
-        <div id="about">
+        <About_info id="about">
             <Content>
                 <div className="about">
                     <h1>ABOUT ME</h1>
@@ -13,19 +13,22 @@ const About = () => {
                         I hope to build apps that not only work well but also look good.
                         I have interest in building technologies for other developers to use. I’m eager to meet and network with a lot of people, so feel free to connect with me!
                     </p>
+                    <a href="/#more">More About Me</a>
                 </div>
             </Content>
-
-            <a href="/#more">More About Me</a>
-        </div>
+        </About_info>
     );
 };
 
 export default About;
 
-const Content = styled.div`
+const About_info = styled.div`
+    border: 1px dashed red;
     width: 90%;
     margin: 0px auto;
+    margin-top: 50px;
+`
+const Content = styled.div`
     display: flex ;
     justify-content: space-around;
     .about{
