@@ -1,4 +1,11 @@
 import styled from "styled-components";
+import Img1 from "../assets/vscode-icons_file-type-html.svg"
+import Img2 from "../assets/vscode-icons_file-type-css.svg"
+import Img3 from "../assets/vscode-icons_file-type-js-official.svg"
+import Img4 from "../assets/vscode-icons_file-type-vscode.svg"
+import Img5 from "../assets/akar-icons_github-fill.svg"
+import Img6 from "../assets/logos_react.svg"
+import Img7 from "../assets/styled-components.png"
 
 const HomeTwo = () => {
     return (
@@ -8,16 +15,16 @@ const HomeTwo = () => {
         <p>Technologies I've been working with recently</p>
         <LogoImg>
             <div className="flex1">
-                <img src="src\assets\vscode-icons_file-type-html.svg" alt="" />
-                <img src="src\assets\vscode-icons_file-type-css.svg" alt="" />
-                <img src="src\assets\vscode-icons_file-type-js-official.svg" alt="" />
-                <img src="src\assets\vscode-icons_file-type-vscode.svg" alt="" />
+                <img src={Img1} alt="" />
+                <img src={Img2} alt="" />
+                <img src={Img3} alt="" />
+                <img src={Img4} alt="" />
             </div>
             <div className="flex2">
-                <img src="src\assets\akar-icons_github-fill.svg" alt="" />
-                <img src="src\assets\logos_react.svg" alt="" />
-                <img src="src\assets\styled-components.png" alt="" />
-                <img src="src\assets\typescript-official-svgrepo-com.svg" alt="" />
+                <img src={Img5} alt="" />
+                <img src={Img6} alt="" />
+                <img src={Img7} alt="" />
+                <img src={Img8} alt="" />
             </div>
             
            
