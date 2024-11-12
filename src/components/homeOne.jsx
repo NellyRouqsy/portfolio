@@ -1,5 +1,8 @@
 import styled from "styled-components";
 import Button from "./button";
+import Img1 from "../assets/github-color-svgrepo-com.svg"
+import Img2 from "../assets/linkedin-1-svgrepo-com.svg"
+import Img3 from "../assets/IMG-20240902-WA0069-removebg-preview.png"
 
 const HomeOne = () => {
     return (
@@ -15,12 +18,12 @@ const HomeOne = () => {
                 </p>
                 <Text>
                     <Button text="CONTACT ME" style="btn1"/>
-                    <a href="https://github.com/NellyRouqsy"><img src="src/assets/github-color-svgrepo-com.svg" alt="" /></a>
-                    <a href="https://www.linkedin.com/in/farouq-adedokun"><img src="src\assets\linkedin-1-svgrepo-com.svg" alt="" /></a>
+                    <a href="https://github.com/NellyRouqsy"><img src={Img1} alt="" /></a>
+                    <a href="https://www.linkedin.com/in/farouq-adedokun"><img src={Img2} alt="" /></a>
                 </Text>
             </HomeOneText>
             <HomeOneImg>
-                <img src="src\assets\IMG-20240902-WA0069-removebg-preview.png" alt="" />
+                <img src={Img3} alt="" />
             </HomeOneImg>
             
         </Home>
@@ -40,10 +43,10 @@ const Home = styled.div`
     animation: slide-in 2s forwards;
     @keyframes slide-in {
         from{
-            transform: translateX(-100%); /* Start from the left */  
+            transform: translateX(-100%);
         }
         to{
-            transform: translateX(0); /* End at the original position */  
+            transform: translateX(0);
         }
     }
     @media (max-width: 800px) {
@@ -71,6 +74,8 @@ const Text = styled.div`
             margin-left: 30%;
             display: flex;
             justify-content: center;
+            margin-top: 10px;
+            align-items: center;
         }
     }
     img{

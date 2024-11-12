@@ -37,14 +37,17 @@ const Content = styled.div`
     text-align: center;
 `
 const LogoImg = styled.div`
-margin: 0px auto;
+    margin: 0px auto;
+    @media (max-width: 800px) {
+        margin: 0px auto;
+    }
 .flex1{
     margin-top: 20px;
     display: flex;
     gap: 250px;
     justify-content: center;
     @media (max-width: 800px) {
-        margin-top: 30px;
+        padding-top: 30px;
         display: flex;
         margin: 0px auto;
         width: 90%;
@@ -57,7 +60,7 @@ margin: 0px auto;
     gap: 250px;
     justify-content: center;
     @media (max-width: 800px) {
-        margin-top: 50px;
+        padding-top: 50px;
         display: flex;
         margin: 0px auto;
         width: 90%;
