@@ -1,6 +1,4 @@
 import styled from "styled-components";
-import { FaExternalLinkAlt } from "react-icons/fa";
-
 const Project = (props) => {
     return (
         <Card className={`prj ${props.style}`}>
@@ -9,8 +7,9 @@ const Project = (props) => {
                 
             </div>
             <p>{props.text}</p>
-            <div className="links"><a href={props.url}><img src="src\assets\bxl-github.svg.svg" alt="" /></a>
-                <a href={props.link}>Project site</a>
+            <div className="links">
+                <a href={props.url}>View Code</a>
+                <a href={props.link}>Live Preview</a>
             </div>
         </Card>
     );
@@ -20,11 +19,13 @@ export default Project
 
 const Card = styled.div`
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border-radius: 20px;
+    border-radius: 5px;
+    p{
+        font-size: 5px;
+    }
     .links{
-        margin-left: 20px;
         display: flex;
-        gap: 20px;
+        justify-content: space-between;
         align-items: center;
         a{
             text-decoration: none;

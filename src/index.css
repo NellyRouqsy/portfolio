@@ -12,3 +12,9 @@
   }
 
 }
+*{
+  font-family: poppins;
+  h1{
+    font-family: Nunito Sans;
+  }
+}

@@ -1,3 +1,4 @@
+import styled from "styled-components";
 import About from "./components/about";
 import Contact from "./components/contact";
 import Work from "./components/work";
@@ -7,7 +8,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 const App = () => {
   return (
-    <div>
+    <Dive>
       <BrowserRouter>
       <Header/>
         <Routes>
@@ -21,8 +22,11 @@ const App = () => {
         {/* <Work/> */}
       </BrowserRouter>
     
-    </div>
+    </Dive>
   );
 };
 
 export default App;
+const Dive = styled.div`
+  font-size: poppins;
+`

@@ -6,6 +6,7 @@ import Img4 from "../assets/vscode-icons_file-type-vscode.svg"
 import Img5 from "../assets/akar-icons_github-fill.svg"
 import Img6 from "../assets/logos_react.svg"
 import Img7 from "../assets/styled-components.png"
+import Img8 from "../assets/typescript-official-svgrepo-com.svg"
 
 const HomeTwo = () => {
     return (
